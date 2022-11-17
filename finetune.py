@@ -8,7 +8,7 @@ import random
 import torch
 
 
-model_path = './models/gpt2-large/'
+model_path = './models/gpt-2/'
 data_path  = './data/'
 tokenizer = GPT2Tokenizer.from_pretrained(model_path) 
  
@@ -171,7 +171,7 @@ def main():
     random.seed(42)
 
     ## do a test
-    do_test(text="|Name : David , Age : 18| Name : Tom , Age : 29| How old is David? A: 18. How old is Tom? A : ",length=2,model=model)
+    do_test(text="My name is Mark. I am a student. His name is Jone, he is a",length=20,model=model)
     
 
         
